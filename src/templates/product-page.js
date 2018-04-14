@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import { Helmet } from "react-helmet";
 
 export const ProductPageTemplate = ({
   image,
@@ -16,6 +17,10 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <section className="section section--gradient">
+      <Helmet>
+        <title>My Title</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
     <div className="container">
       <div className="section">
         <div className="columns">
